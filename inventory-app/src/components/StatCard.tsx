@@ -1,6 +1,3 @@
-/* ============================================
-      FICHIER: src/components/StatCard.tsx
-      ============================================ */
 
 import React from 'react';
 

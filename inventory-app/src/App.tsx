@@ -1,7 +1,3 @@
-/* ============================================
-      FICHIER: src/App.tsx (MISE À JOUR)
-      ============================================ */
-
 import React, { useState } from 'react';
 import { Sidebar } from './components/Sidebar';
 import { Topbar } from './components/Topbar';

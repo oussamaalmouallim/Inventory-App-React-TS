@@ -1,6 +1,3 @@
-/* ============================================
-      FICHIER: src/pages/Orders.tsx
-      ============================================ */
 
 import React from 'react';
 import { Badge } from '../components/Badge';

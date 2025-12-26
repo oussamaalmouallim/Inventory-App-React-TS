@@ -1,6 +1,3 @@
-/* ============================================
-      FICHIER: src/pages/Dashboard.tsx (MISE À JOUR)
-      ============================================ */
 
 import React from 'react';
 import { StatCard } from '../components/StatCard';

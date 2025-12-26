@@ -1,6 +1,4 @@
-/* ============================================
-      FICHIER: src/pages/Login.tsx
-      ============================================ */
+
 import React, { useState } from 'react';
 
 interface LoginProps {

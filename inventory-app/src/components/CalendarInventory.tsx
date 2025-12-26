@@ -1,7 +1,3 @@
-/* ============================================
-      FICHIER: src/components/CalendarInventory.tsx
-      NOUVEAU COMPOSANT
-      ============================================ */
 
 import React from 'react';
 

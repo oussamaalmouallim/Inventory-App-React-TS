@@ -1,6 +1,3 @@
-/* ============================================
-      FICHIER: src/pages/Users.tsx
-      ============================================ */
 
 import React, { useState } from 'react';
 import { Badge } from '../components/Badge';
