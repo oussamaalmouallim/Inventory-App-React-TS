@@ -1,53 +1,36 @@
-import React from 'react';
-import { Modal } from './Modal';
 
-interface ConfirmModalProps {
-  isOpen: boolean;
+import React from 'react';
+
+interface ModalProps {
+  id: string;
   title: string;
-  message: string;
-  confirmText?: string;
-  cancelText?: string;
-  isLoading?: boolean;
-  onConfirm: () => void;
-  onCancel: () => void;
+  isOpen: boolean;
+  onClose: () => void;
+  children: React.ReactNode;
 }
 
-export const ConfirmModal: React.FC<ConfirmModalProps> = ({
-  isOpen,
-  title,
-  message,
-  confirmText = 'Confirmer',
-  cancelText = 'Annuler',
-  isLoading = false,
-  onConfirm,
-  onCancel,
-}) => {
+export const Modal: React.FC<ModalProps> = ({ id, title, isOpen, onClose, children }) => {
+  const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
+
   return (
-    <Modal
-      id="confirmModal"
-      title={title}
-      isOpen={isOpen}
-      onClose={onCancel}
+    <div
+      id={id}
+      className={`modal ${isOpen ? 'active' : ''}`}
+      onClick={handleBackdropClick}
     >
-      <div className="confirm-modal-content">
-        <p className="confirm-modal-message">{message}</p>
-        <div className="confirm-modal-actions">
-          <button 
-            className="btn btn--outline" 
-            onClick={onCancel}
-            disabled={isLoading}
-          >
-            {cancelText}
-          </button>
-          <button 
-            className="btn btn--primary" 
-            onClick={onConfirm}
-            disabled={isLoading}
-          >
-            {isLoading ? '...' : confirmText}
-          </button>
+      <div className="modal-content">
+        <button className="modal-close" onClick={onClose}>
+          ✕
+        </button>
+        <div className="modal-header">
+          <h2 className="modal-title">{title}</h2>
         </div>
+        {children}
       </div>
-    </Modal>
+    </div>
   );
 };

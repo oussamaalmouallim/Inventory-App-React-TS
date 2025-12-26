@@ -1,8 +1,9 @@
 import React from 'react';
+import type { PageType } from '../types';
 
 interface SidebarProps {
-  activePage: string;
-  onPageChange: (page: string) => void;
+  activePage: PageType;
+  onPageChange: (page: PageType) => void;
   onLogout: () => void;
 }
 
@@ -28,7 +29,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ activePage, onPageChange, onLo
           <li key={item.id} className="nav-item">
             <button
               className={`nav-link ${activePage === item.id ? 'active' : ''}`}
-              onClick={() => onPageChange(item.id)}
+              onClick={() => onPageChange(item.id as PageType)}
             >
               <span className="nav-icon">{item.icon}</span>
               <span>{item.label}</span>

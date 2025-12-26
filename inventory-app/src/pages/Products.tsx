@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react';
-import { Badge } from '../components/Badge';
 import { Modal } from '../components/Modal';
 
 export const Products: React.FC = () => {

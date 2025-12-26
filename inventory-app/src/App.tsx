@@ -17,7 +17,6 @@ type PageType = 'dashboard' | 'products' | 'categories' | 'orders' | 'history' |
 function App() {
   const [currentPage, setCurrentPage] = useState<PageType>('dashboard');
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [currentRole, setCurrentRole] = useState<'admin' | 'technician' | 'sales' | null>(null);
   const [selectedMonth, setSelectedMonth] = useState<Date>(new Date());
 
   const pageConfig: Record<PageType, { title: string; component: React.ReactNode }> = {
@@ -31,15 +30,13 @@ function App() {
     scanner: { title: '📱 Scanner QR', component: <Scanner /> },
   };
 
-  const handleLoginSuccess = (role: 'admin' | 'technician' | 'sales') => {
+  const handleLoginSuccess = (_role: 'admin' | 'technician' | 'sales') => {
     setIsAuthenticated(true);
-    setCurrentRole(role);
   };
 
   const handleLogout = () => {
     if (window.confirm('Êtes-vous sûr de vouloir vous déconnecter?')) {
       setIsAuthenticated(false);
-      setCurrentRole(null);
       setCurrentPage('dashboard');
     }
   };
@@ -56,8 +53,6 @@ function App() {
         activePage={currentPage}
         onPageChange={setCurrentPage}
         onLogout={handleLogout}
-        selectedMonth={selectedMonth}
-        onMonthChange={setSelectedMonth}
       />
       <div className="main-content">
         <Topbar title={pageInfo.title} />

@@ -48,3 +48,16 @@ export interface ScanData {
   boxId: string;
   timestamp: string;
 }
+
+export interface Toast {
+  id: string;
+  message: string;
+  title?: string;  // ← Ajoute cette ligne si elle n'existe pas
+  type: 'success' | 'error' | 'info' | 'warning';
+  duration?: number;
+}
+
+
+export interface FormErrors {
+  [key: string]: string;
+}
