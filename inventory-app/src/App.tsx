@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { Sidebar } from './inventory-app/src/components/Sidebar';
-import { Topbar } from './inventory-app/src/components/Topbar';
-import { Dashboard } from './inventory-app/src/pages/Dashboard';
-import { Products } from './inventory-app/src/pages/Products';
-import { Categories } from './inventory-app/src/pages/Categories';
-import { Orders } from './inventory-app/src/pages/Orders';
-import { History } from './inventory-app/src/pages/History';
-import { Users } from './inventory-app/src/pages/Users';
-import { Scanner } from './inventory-app/src/pages/Scanner';
-import { Login } from './inventory-app/src/pages/Login';
-import { Calendar } from './inventory-app/src/pages/Calendar';
+import { Sidebar } from './components/Sidebar';
+import { Topbar } from './components/Topbar';
+import { Dashboard } from './pages/Dashboard';
+import { Products } from './pages/Products';
+import { Categories } from './pages/Categories';
+import { Orders } from './pages/Orders';
+import { History } from './pages/History';
+import { Users } from './pages/Users';
+import { Scanner } from './pages/Scanner';
+import { Login } from './pages/Login';
+import { Calendar } from './pages/Calendar';
 import './index.css';
 
 type PageType = 'dashboard' | 'products' | 'categories' | 'orders' | 'history' | 'users' | 'scanner' | 'calendar';
