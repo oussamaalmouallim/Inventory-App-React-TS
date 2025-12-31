@@ -1,0 +1,138 @@
+[33mcommit e26c6d0ce21e4a6209f7905120fbd521ac0a9f0f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Wed Dec 31 11:35:14 2025 +0100
+
+    fix : trynig to pull some files ut of src
+
+[33mcommit 6f812b35224751cba83bdf448ff0bc26f4ca1820[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Wed Dec 31 11:21:39 2025 +0100
+
+    fix: add base path for GitHub Pages deployment
+
+[33mcommit b39929c568525d7578def0a5185be4dca7d3195f[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Wed Dec 31 11:08:16 2025 +0100
+
+    replacing directory of index
+
+[33mcommit 076ae0efad6f031fb827106ef3b25d6123b15c3f[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Mon Dec 29 18:37:46 2025 +0100
+
+    Fix: point to compiled dist files
+
+[33mcommit e38556b360fe7bfafbb98fa5891514f7ed859ee9[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Mon Dec 29 18:31:40 2025 +0100
+
+    Fix: use relative paths for GitHub Pages
+
+[33mcommit f3004a02443cc1d834e9bca4a2f92a02d53ee32f[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Mon Dec 29 18:24:42 2025 +0100
+
+    Fix: move project to repo root
+
+[33mcommit c929cf9ee2490f5108907624f23992f9bc3460f5[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Mon Dec 29 18:14:55 2025 +0100
+
+    Fix: update vite base config for GitHub Pages
+
+[33mcommit 6870613b93d887082d8ad9b1d315935bf7213274[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Mon Dec 29 17:56:00 2025 +0100
+
+    turn into github pages fix
+
+[33mcommit 83182dcb25eafa60c09b1b448d28e0fbe0c9c5a8[m
+Merge: 66a93af b4fdfd4
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Mon Dec 29 17:42:49 2025 +0100
+
+    test
+
+[33mcommit 66a93afa6d60abf05b66f9f182e442c633a956ab[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Mon Dec 29 17:32:27 2025 +0100
+
+    Fix: remove duplicate index.html and build for production
+
+[33mcommit b4fdfd480e5fb2715bf4e8496eb09d66644ecfb4[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Mon Dec 29 17:16:39 2025 +0100
+
+    test 2
+
+[33mcommit 42a3db799f40e4aac8140f9476f5775496227624[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Mon Dec 29 17:11:50 2025 +0100
+
+    fix github pages problems
+
+[33mcommit 9005a34e706bb7102c7d54a4f2cc6ac5003bba98[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Mon Dec 29 16:08:07 2025 +0100
+
+    test with index
+
+[33mcommit 4991c4895110416afbe9e775d7f842b4fb5f7f13[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Mon Dec 29 16:05:38 2025 +0100
+
+    Fix deploy workflow
+
+[33mcommit b6a3649f91136790936cf840240e6cafe1418cec[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Mon Dec 29 15:59:18 2025 +0100
+
+    Add build files
+
+[33mcommit bc6435310d2691528141aba2b1fb27c457f0dfd6[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Mon Dec 29 13:31:33 2025 +0100
+
+    move folder
+
+[33mcommit c0e9c20c4bbe23b30a9c3418d0d42e3b8a456547[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Mon Dec 29 13:27:58 2025 +0100
+
+    Add GitHub Actions workflow for deployment
+
+[33mcommit f637b6157634ad51c3e44cd4c739f92aa001c9b2[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Mon Dec 29 13:15:42 2025 +0100
+
+    fix github pages
+
+[33mcommit 987312eff0d3f521e527eaf773610ed5d672b836[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Fri Dec 26 19:40:55 2025 +0100
+
+    Fix: Move index.html to public folder
+
+[33mcommit 7e3f49b41f7332d417455fc6304494a89e121b12[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Fri Dec 26 18:41:15 2025 +0100
+
+    Add base config for GitHub Pages
+
+[33mcommit f409f98116177e6007ae259654a0dc2814239309[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Fri Dec 26 18:31:16 2025 +0100
+
+    Build for GitHub Pages
+
+[33mcommit f7df10394592354320e942e5add72425acabf8a5[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Fri Dec 26 15:43:54 2025 +0100
+
+    i have added a new logo as a title also i cleaned my code
+
+[33mcommit 4dad5e29e52d8817492154aed6f4daec59d92d50[m
+Author: OUSSAMAOUSA <oussamakanouni39@gmail.com>
+Date:   Wed Dec 24 18:45:27 2025 +0100
+
+    first commit
