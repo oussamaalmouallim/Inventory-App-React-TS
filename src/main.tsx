@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import App from './App'
 import './index.css'
 
-createRoot(document.getElementById('root')!).render(
+ReactDom.createRoot(document.getElementById('root')
   <StrictMode>
     <BrowserRouter basename="/Inventory-App-React-TS/">
       <Routes>
@@ -13,4 +13,4 @@ createRoot(document.getElementById('root')!).render(
       </Routes>
     </BrowserRouter>
   </StrictMode>
-)
+);
