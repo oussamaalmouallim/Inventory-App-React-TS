@@ -45,7 +45,7 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
         {/* Logo + titre */}
         <div style={{ textAlign: 'center', marginBottom: 32 }}>
           <div style={{ fontWeight: 700, fontSize: 24, color: '#d82323', letterSpacing: 1 }}>
-            TRIIS
+            TIS
           </div>
           <div style={{ fontSize: 11, textTransform: 'uppercase', letterSpacing: 2, color: '#777' }}>
             CONTROL EVERYTHING

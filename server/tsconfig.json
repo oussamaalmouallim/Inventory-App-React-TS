@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2020",             // Version de JavaScript générée
+    "module": "commonjs",           // Format de module pour Node.js
+    "outDir": "./dist",             // Où mettre le code compilé
+    "rootDir": "./",                // Racine du projet
+    "strict": true,                 // Mode strict (recommandé pour apprendre)
+    "esModuleInterop": true,        // <--- C'EST LA CLÉ MAGIQUE pour ton erreur
+    "skipLibCheck": true,           // Ignore les erreurs dans les fichiers de définition externes
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*", "prisma/**/*"],
+  "exclude": ["node_modules"]
+}

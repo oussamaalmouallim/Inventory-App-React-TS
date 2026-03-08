@@ -1,0 +1,85 @@
+// server/prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// 1. Les Utilisateurs
+// J'ai ajouté 'password' pour l'authentification réelle
+model User {
+  id        String   @id @default(uuid()) // ID unique (ex: "550e8400-e29b...")
+  email     String   @unique
+  name      String
+  password  String   // Le mot de passe sera hashé
+  role      Role     @default(TECHNICIAN)
+  lastLogin DateTime?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  // Relations : Un user peut faire plusieurs mouvements
+  movements Movement[]
+}
+
+// 2. Les Catégories
+model Category {
+  id          String    @id @default(uuid())
+  name        String    @unique
+  description String?
+  
+  // Relations : Une catégorie contient plusieurs produits
+  products    Product[]
+}
+
+// 3. Les Produits
+// Basé sur ton interface Product dans types/index.ts
+model Product {
+  id          String   @id @default(uuid())
+  sku         String   @unique // Le code barre doit être unique
+  name        String
+  stock       Int      @default(0)
+  price       Decimal  @db.Decimal(10, 2) // Pour l'argent, on utilise Decimal, pas Float
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Relations
+  categoryId  String
+  category    Category @relation(fields: [categoryId], references: [id])
+  
+  movements   Movement[]
+}
+
+// 4. Les Mouvements de Stock (Historique)
+// Basé sur ton interface Movement
+model Movement {
+  id          String       @id @default(uuid())
+  type        MovementType
+  quantity    Int
+  notes       String?      // Pour stocker "Destination" ou "Projet ID"
+  createdAt   DateTime     @default(now())
+
+  // Qui a fait le mouvement ?
+  userId      String
+  user        User         @relation(fields: [userId], references: [id])
+
+  // Quel produit ?
+  productId   String
+  product     Product      @relation(fields: [productId], references: [id])
+}
+
+// Enums (Listes de choix fixes)
+enum Role {
+  ADMIN
+  TECHNICIAN
+  STOCK_MANAGER
+}
+
+enum MovementType {
+  ENTRY
+  EXIT
+  RESERVATION
+}
